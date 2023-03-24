@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>LiCase</title>
+
+</head>
+<body>
+    
+    <!-- Навигационная панель -->
+
+    <nav class="navbar fixed-top navbar-expand-xl  navbar-dark bg-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">LiCase</a>
+            <!-- Кнопка для мобильного -->
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                aria-controls="navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Блок который будет разворачиваться при нажатии на кнопку -->
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto mb-2">
+                    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#AboutUs" class="nav-link">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#games" class="nav-link">Games</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex ms-auto p-2">
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+                    <button class="btn btn-outline-danger ms-3">Sign out</button>
+                </div>       
+            </div>
+        </div>
+    </nav>
+
+    <!-- Конец Навигационной панели -->
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-bs-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" arial-bs-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+        <form id="tg">
+                            <div class="row mb-3">
+                                <label for="inputName" class="col-sm-2 col-form-label">Login</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="login" class=" form-control" id="inputName" required>
+                                </div>
+                            </div>
+                            <!-- Почта -->
+                            <div class="row mb-3">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" name="email" class=" form-control" id="inputEmail" required>
+                                </div>
+                            </div>
+                            <!-- Пароль -->
+                            <div class="row mb-3">
+                                <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" name="password" class=" form-control" id="inputPass" required>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="mx-3">
+                        <fieldset>
+                            <div class="row mb-3">
+                                <legend class="col-form-label c0l-sm-2">Subscribe</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="radios" value="option1" id="radios1" checked>
+                                        <label for="radios1" class="form-check-label">Free</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="radios" value="option2" id="radios2">
+                                        <label for="radios2" class="form-check-label">Gold</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="radios" value="option3" id="radios3">
+                                        <label for="radios3" class="form-check-label">Diamond</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                                <modal class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                                    <div id="successend" class="alert alert-danger" role="alert" style="display: none;"></div>
+                                    <button class="btn btn-secondary" type="submit">Sign in</button>
+                                </modal>
+        </form>
+
+        
+                </div>
+            </div>
+    </div>
+
+    <!--Конец Modal -->
+
+
+    
+    
+    <main>
+
+
+     <!-- Карусель на главной -->
+
+        
+        <div class="carousel slide" id="carouselControls"  data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.pexels.com/photos/790479/pexels-photo-790479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+            </div> 
+            <a href="#carouselControls" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carouselControls" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        
+        <!-- Конец Карусели на главной -->
+        
+        
+        <!-- Про нас -->
+        
+        
+        <div class="container my-5" id="AboutUs">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="w-100" src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12 text-center " >
+                    <h2 class="my-2">About Us</h2>
+                    <p>You can vote for a team or choose a mission to earn points and buy whatever you like: cs go skins, standoff 2, multiple game accounts.You can choose a mission from almost any popular game, from mobile games to games on the playstation</p>
+                </div>
+
+            </div>
+            <!-- Для отступа -->
+            <h2 class="text-center my-5"></h2>
+            <hr></hr>
+            <h2 class="text-center my-5"></h2>
+            <!-- Конец Для отступа -->
+           
+           <!-- Про нас -->
+            <div class="row gy-5">
+                
+                <div class="col-md-4 col-sm-6 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-bag-check"viewBox="0 0 16 16 ">
+                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                      </svg>
+                      <h2 class="my-2"></h2>
+                      <h4>Quick purchase of accounts!<br> Quick purchase of currency!<br> Quick purchase of skins! </h4>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                      <h2 class="my-2"></h2>
+                      <h4>The safety of the purchase from the seller is guaranteed.</h4>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                        <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                      <h2 class="my-2"></h2>
+                      <h4>You can top up using a variety of available methods.</h4>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+                        <path d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z"/>
+                      </svg>
+                      <h2 class="my-2"></h2>
+                      <h4>Support on the site works very quickly, if you have any questions, they will answer within 24 hours!</h4>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-box2-heart" viewBox="0 0 16 16">
+                        <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z"/>
+                        <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5Zm0 1H7.5v3h-6l2.25-3ZM8.5 4V1h3.75l2.25 3h-6ZM15 5v10H1V5h14Z"/>
+                      </svg>
+                      <h2 class="my-2"></h2>
+                      <h4>Lots of different drawings and prizes for different games!</h4>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+                        <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                      </svg>
+                      <h2 class="my-2"></h2>
+                      <h4>The variety of games available is amazing!</h4>
+                </div>
+                
+            </div>
+            <!-- Конец Про нас -->
+        </div>
+        
+        
+        <!-- Конец про нас -->
+
+
+        <!-- Игры (Картинки игр) -->
+        <div class="container text-center my-5" id="games">
+            <p>
+                <a href="#multiCollapse1" data-bs-toggle="collapse" aria-controls="multiCollapse1" role="button" aria-expanded="false" class="btn btn-secondary">PC</a>
+                <button class="btn btn-secondary" data-bs-toggle="collapse" type="button" data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">Mobile</button>
+                
+            </p>
+            <div class="row">
+                <div class="col my-2">
+                    <div class="collapse multi-collapse" id="multiCollapse1">
+                        <div class="card card-body">
+                            <img class="w-100" src="https://www.freeiconspng.com/uploads/csgo-icon-12.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="collapse multi-collapse" id="multiCollapse2">
+                        <div class="card card-body">
+                            <img class="w-100" src="https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht" alt="">
+                        </div>
+                    </div>
+                    </div>
+                <div class="col my-2">
+                    <div class="collapse multi-collapse" id="multiCollapse1">
+                        <div class="card card-body">
+                            <img class="w-100" src="https://pbs.twimg.com/profile_images/1478893871199186945/1mA6tezL_400x400.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="collapse multi-collapse" id="multiCollapse1">
+                        <div class="card card-body">
+                            <img class="w-100" src="https://image.api.playstation.com/vulcan/ap/rnd/202103/1501/enihR6QwSYiWCNl2HdPfV6R6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="collapse multi-collapse" id="multiCollapse2">
+                        <div class="card card-body">
+                            <img class="w-100" src="https://play-lh.googleusercontent.com/EiElcSrd6-o-19roiswSx0AZPzsq6qF3hUGHsSWDl5UVtj7G23DHkneM8ucwqyOmEg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2">
+                    <div class="collapse multi-collapse" id="multiCollapse2">
+                        <div class="card card-body">
+                            <img class="w-100" src="https://play-lh.googleusercontent.com/jiHPXh_hnBibhnFPS2IcBsUBlWDAhcCD-8JPNvXC6Xv4A1t_wGbEaU4_8AJWtAeXHNs" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец Игры (Картинки игр) -->
+
+
+        
+
+        <!-- Footer -->
+
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Sites</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://cyberplayr.com" class="nav-link p-0 text-muted" target="_blank">Cyberplay</a></li>
+                    <li class="nav-item mb-2"><a href="https://ggdrop.live" class="nav-link p-0 text-muted" target="_blank">GGDrop</a></li>
+                    <li class="nav-item mb-2"><a href="https://key-drop.com" class="nav-link p-0 text-muted" target="_blank">KeyDrop</a></li>
+                    <li class="nav-item mb-2"><a href="https://csgo.net" class="nav-link p-0 text-muted" target="_blank">MyCsGo</a></li>
+                    <li class="nav-item mb-2"><a href="https://cscase.io/" class="nav-link p-0 text-muted" target="_blank">CScase</a></li>
+                  </ul>
+                </div>
+          
+          
+                <div class="col-md-7 offset-md-1 mb-5">
+                  <form>
+                    <h5>Describe the problem</h5>
+                    <p>Ask Us any question</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Question</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Question">
+                      <button class="btn btn-primary" type="button">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+
+        <!-- Конец Footer -->
+        
+
+        <!-- Промокод -->
+        <div class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <button type="submit" class="yt-icon-button btn btn-secondary">Redeem</button>
+            </div>
+        </div>
+        <!--Конец Промокод -->
+    </main>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="scriptsendtg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>

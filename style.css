@@ -1,0 +1,12 @@
+.carousel-item{
+    height: 1000px;
+}
+
+.carousel-item-img{
+    height: 1000px;
+}
+
+.yt-icon-button:focus {
+    vertical-align: middle;
+    color: #01a715;
+}
